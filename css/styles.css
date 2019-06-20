@@ -1,0 +1,147 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+}
+
+body{
+	background-image: url('../images/Background.jpg');
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.dialogue{
+	position: relative;
+	background-image: url('../images/dialogue.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 480px;
+	height: 500px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	color: #ffffff;
+	text-align: center;
+}
+
+.dialogue_logo{
+	background-image: url('../images/logo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 305px;
+	height: 200px;
+	position: absolute;
+	top: -32%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dialogue_title{
+	font-size: 19px;
+	font-weight: 100;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.dialogue_questions{
+	padding-top: 130px;
+}
+
+.question_icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 30px;
+}
+
+.question_icon{
+	background-image: url('../images/buttons.png');
+	background-repeat: no-repeat;
+    width: 117px;
+	height: 137px;
+	position: relative;
+}
+
+.question_icon span{
+	text-transform: uppercase;
+	position: absolute;
+    bottom: -30px;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.question_icon:hover{
+	background-position-y: -137px;
+	cursor: pointer;
+}
+
+.icon__woman{
+	background-position-x: -117px;
+}
+
+.question-2, .question-3, .continue{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.icon__warrior{
+	background-position-x: -234px;
+}
+
+.icon__wizard{
+	background-position-x: -351px;
+}
+
+.icon__archer{
+	background-position-x: -468px;
+}
+
+.icon__people{
+	background-position-x: -585px;
+}
+
+.icon__elf{
+	background-position-x: -702px;
+}
+
+.icon__dwarf{
+	background-position-x: -819px;
+}
+
+.btn_continue{
+	background-image: url('../images/btn_continue.png');
+	background-repeat: no-repeat;
+	width: 305px;
+	height: 85px;
+}
+
+.fadeIn{
+	opacity: 1;
+	visibility: visible;
+	transition: 0.8s ease-in-out;
+}
+
+@media(max-height: 770px){
+	.dialogue{
+		top: 59%;
+	}
+}
+
+@media(max-height: 650px){
+	.dialogue{
+		bottom: 1%;
+	}
+}
+
+@media(max-width: 500px){
+	.dialogue{
+		transform: translatex(-50%) scale(0.8);
+		top: 17%;
+	}
+}
